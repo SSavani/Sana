@@ -1,0 +1,23 @@
+<p id="Err" class="error">{{regErr}}</p>
+<p id="Succ" class="success">{{regSucc}}</p>
+<h1>Trainer Information: </h1>
+<p>Name:<br>{{coachName}}</p>
+<p>Gender:<br>{{gender}}</p>
+<p>Profession:<br>{{profession}}</p>
+<p>Email:<br>{{email}}</p>
+<p>Available Time:<br>{{availableTime}}</p>
+
+<a id="register" href="http://localhost:3000/coach/userRegCoaches">Register</a> 
+<a id="drop" href="http://localhost:3000/coach/dropCoaches">Drop</a>
+<a id="comment" href="http://localhost:3000/coach/CoachComment">Comment</a>
+
+<h2>Comment: </h2>
+<div>
+    {{#each comment}}
+    <article>
+        {{this.commentInfo}}<br>
+        {{this.name}}<br>
+        {{this.timeStamp}}<br><br>
+    </article>
+    {{/each}}
+</div>

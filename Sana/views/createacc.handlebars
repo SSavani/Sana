@@ -1,0 +1,68 @@
+<h2>Create New Account</h2>
+
+<p id="createAErr" class="error">{{{error}}}</p>
+
+<form id="createacc" action={{{url}}} method="post">
+    <label for="userName">Please input your information to create a new account:</label><br><br>
+    Username<span style="color:red">*</span>:<br><input type="text" name="username" id="userName">
+    <br><br><label for="passWord"></label>
+    Password<span style="color:red">*</span>:<br><input type="password" name="password" id="passWord">
+    <br><br><label for="Email"></label>
+    Email<span style="color:red">*</span>:<br><input type="text" name="email" id="Email">
+    <br><br><label for="Gender"></label>
+    Gender:<br><select name="gender" id="Gender">
+                     <option value="option" selected>Option</option>
+                     <option value="female">Female</option>
+                     <option value="male">Male</option>
+                 </select>
+    <br><br><label for="Height"></label>
+    Height<br>
+    <select name="height" id="Height">
+                     <option value=48>4 foot 0 inches</option>
+                     <option value=49>4 foot 1 inches</option>
+                     <option value=50>4 foot 2 inches</option>
+                     <option value=51>4 foot 3 inches</option>
+                     <option value=52>4 foot 4 inches</option>
+                     <option value=53>4 foot 5 inches</option>
+                     <option value=54>4 foot 6 inches</option>
+                     <option value=55>4 foot 7 inches</option>
+                     <option value=56>4 foot 8 inches</option>
+                     <option value=57>4 foot 9 inches</option>
+                     <option value=58>4 foot 10 inches</option>
+                     <option value=59>4 foot 11 inches</option>
+
+                     <option value=60>5 foot 0 inches</option>
+                     <option value=61>5 foot 1 inches</option>
+                     <option value=62>5 foot 2 inches</option>
+                     <option value=63>5 foot 3 inches</option>
+                     <option value=64>5 foot 4 inches</option>
+                     <option value=65>5 foot 5 inches</option>
+                     <option value=66>5 foot 6 inches</option>
+                     <option value=67>5 foot 7 inches</option>
+                     <option value=68>5 foot 8 inches</option>
+                     <option value=69>5 foot 9 inches</option>
+                     <option value=70>5 foot 10 inches</option>
+                     <option value=71>5 foot 11 inches</option>
+
+                     <option value=72>6 foot 0 inches</option>
+                     <option value=73>6 foot 1 inches</option>
+                     <option value=74>6 foot 2 inches</option>
+                     <option value=75>6 foot 3 inches</option>
+                     <option value=76>6 foot 4 inches</option>
+                     <option value=77>6 foot 5 inches</option>
+                     <option value=78>6 foot 6 inches</option>
+                     <option value=79>6 foot 7 inches</option>
+                     <option value=80>6 foot 8 inches</option>
+                     <option value=81>6 foot 9 inches</option>
+                     <option value=82>6 foot 10 inches</option>
+                     <option value=83>6 foot 11 inches</option>
+                     
+
+                 </select>
+    
+    
+    {{!-- <input type="text" name="height" id="Height"> --}}
+    <br><br><label for="Weight"></label>
+    Weight(in Pounds):<br><input type="text" name="weight" id="Weight">
+    <br><br><br><button name="submit" id="buttonSub">Submit</button>
+</form>

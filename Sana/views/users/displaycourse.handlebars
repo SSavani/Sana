@@ -1,0 +1,23 @@
+<br><h2>Courses List:</h2><br>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Time</th>
+        <th>Capacity</th>
+        <th>Available Site</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each courseTableObjs}}
+        <tr>
+          <td>{{this.courseName}}</td>
+          <td>{{this.courseDes}}</td>
+          <td>{{this.courseTime}}</td>
+          <th>{{this.capacity}}</th>
+          <th>{{this.availableSite}}</th>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>

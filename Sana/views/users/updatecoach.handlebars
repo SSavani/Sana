@@ -1,0 +1,63 @@
+<p id="updateErr" class="error">{{{error}}}</p>
+<p id="updataSucc" class="success">{{{success}}}</p>
+<form id="updateForm" action="http://localhost:3000/admin/updatecoachinfo" method="post">
+    <label for="coachId" hidden>Coach Id: </label>
+        <input type="text" name="coachid" id="coachId" value={{coachid}} hidden><br><br>
+    <label for="coachName">Coach Name: </label><br>
+        <input type="text" name="coachname" id="coachName" value={{coachname}}><br><br>
+      <label for="coachGender">Coach Gender: </label><br>
+                 <select name="coachgender" id="coachGender">
+                     <option value="female" selected>Female</option>
+                     <option value="male">Male</option>
+                 </select><br><br>
+      <label for="coachMail">Coach Email: </label><br>
+        <input type="text" name="coachmail" id="coachMail" value={{coachmail}}><br><br>
+      <label for="coachDes">Coach Speciality: </label><br>
+        <textarea name="coachdes" id="coachDes">{{coachdes}}</textarea><br><br>
+      <label for="coachTime">Available Time: </label><br>
+        <select name="coachtime" id="coachTime" multiple>
+            <option value="Mon0608">Mon0608</option>
+            <option value="Mon0810">Mon0810</option>
+            <option value="Mon1012">Mon1012</option>
+            <option value="Mon1416">Mon1416</option>
+            <option value="Mon1618">Mon1618</option>
+            <option value="Mon2022">Mon2022</option>
+            <option value="Tus0608">Tus0608</option>
+            <option value="Tus0810">Tus0810</option>
+            <option value="Tus1012">Tus1012</option>
+            <option value="Tus1416">Tus1416</option>
+            <option value="Tus1618">Tus1618</option>
+            <option value="Tus2022">Tus2022</option>
+            <option value="Wen0608">Wen0608</option>
+            <option value="Wen0810">Wen0810</option>
+            <option value="Wen1012">Wen1012</option>
+            <option value="Wen1416">Wen1416</option>
+            <option value="Wen1618">Wen1618</option>
+            <option value="Wen2022">Wen2022</option>
+            <option value="Thu0608">Thu0608</option>
+            <option value="Thu0810">Thu0810</option>
+            <option value="Thu1012">Thu1012</option>
+            <option value="Thu1416">Thu1416</option>
+            <option value="Thu1618">Thu1618</option>
+            <option value="Thu2022">Thu2022</option>
+            <option value="Fri0608">Fri0608</option>
+            <option value="Fri0810">Fri0810</option>
+            <option value="Fri1012">Fri1012</option>
+            <option value="Fri1416">Fri1416</option>
+            <option value="Fri1618">Fri1618</option>
+            <option value="Fri2022">Fri2022</option>
+            <option value="Sat0608">Sat0608</option>
+            <option value="Sat0810">Sat0810</option>
+            <option value="Sat1012">Sat1012</option>
+            <option value="Sat1416">Sat1416</option>
+            <option value="Sat1618">Sat1618</option>
+            <option value="Sat2022">Sat2022</option>
+            <option value="Sun0608">Sun0608</option>
+            <option value="Sun0810">Sun0810</option>
+            <option value="Sun1012">Sun1012</option>
+            <option value="Sun1416">Sun1416</option>
+            <option value="Sun1618">Sun1618</option>
+            <option value="Sun2022">Sun2022</option>
+        </select>
+        <br><br><br><button name="coachupdate" id="coachUpdate">Submit</button>
+</form>

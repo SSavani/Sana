@@ -1,0 +1,23 @@
+<p id="Err" class="error">{{regErr}}</p>
+<p id="Succ" class="success">{{regSucc}}</p>
+<h2>Course Information: </h2>
+<p>Course Name:<br>{{courseName}}</p>
+<p>Course Description:<br>{{courseDes}}</p>
+<p>Course Time:<br>{{courseTime}}</p>
+<p>Course Capacity:<br>{{capacity}}</p>
+<p>Available Site:<br>{{availableSite}}</p>
+
+<a id="register" href="http://localhost:3000/course/userRegCourses">Register</a> 
+<a id="drop" href="http://localhost:3000/course/dropCourses">Drop</a>
+<a id="comment" href="http://localhost:3000/course/CourseComment">Comment</a>
+
+<h2>Comment: </h2>
+<div>
+    {{#each comment}}
+    <article>
+        {{this.commentInfo}}<br>
+        {{this.name}}<br>
+        {{this.timeStamp}}<br><br>
+    </article>
+    {{/each}}
+</div>

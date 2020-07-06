@@ -1,0 +1,10 @@
+<p class="error">{{error}}</p>
+<form id="regForm" action={{url}}  method="post" >
+    <label for="coachTime">Please Choose time: </label>
+    <select name="coachtime" id="coachTime" multiple>
+        {{#each time}}
+            <option value={{this}}>{{this}}</option>
+        {{/each}}
+    </select>
+    <button id="regSubmit">Submit</button>
+</form>

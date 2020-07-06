@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset = "utf-8">
+            <link rel="stylesheet" href="../../public/css/main.css"> 
+            <title>Sana</title>
+        </head>
+        <body>
+            <div id = "container">
+            <div id = "header">
+                <h1>Welcome to Sana</h1>
+            </div>
+            <div>
+                <header>
+                <ul>
+                <nav calss= "navbar">
+                    <a href="http://localhost:3000/about">About</a> |
+                    <a href="http://localhost:3000/course">Course</a> |
+                    <a href="http://localhost:3000/coach">Trainer</a> |
+                    <a href="http://localhost:3000/account">Account</a>
+                    </nav>
+                </ul>
+                </header>
+                
+            </div>
+            <div id = "page">
+                <br>
+                <main>{{{body}}}</main>
+            </div>
+
+            
+            <div id = "copyrightbar">
+                <footer>   
+                    <br><hr><br>
+                &copy; Copyright 2018 by Sana. All Rights Reserved.
+                </footer>
+            </div>
+            </div>
+           <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="../../public/js/script.js"></script> -->
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+            {{> (lookup . 'partial') }}
+        </body>
+    </html>

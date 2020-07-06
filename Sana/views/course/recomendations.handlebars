@@ -1,0 +1,27 @@
+<div>
+<p> Your BMI is {{BMI}}</p>
+<br><br>
+<p> We Recomend the Following Courses</p>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Time</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each course}}
+        <tr>
+          <th>{{this.courseName}}</th>
+          <td>{{this.courseDes}}</td>
+          <td>{{this.courseTime}}</td>
+          <th>{{this.type}}</th>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+</div>

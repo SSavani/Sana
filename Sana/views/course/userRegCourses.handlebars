@@ -1,0 +1,15 @@
+<form id="confirmReg" action="/confirmReg" method="post">
+  <div>
+    {{#each course}}
+    <article>
+        <div>
+           <input type="checkbox" id="courseID" name="courseName" value="{{this.courseName}}"> 
+            <label for="{{this.courseName}}">{{this.courseName}}</label>
+        </div>
+    </article>
+     
+    {{/each}}
+
+  </div>
+  <button name="submit" id="buttonSub">Submit</button>
+</form>

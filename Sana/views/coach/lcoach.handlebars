@@ -1,0 +1,28 @@
+
+<br>
+<h2>Trainer List:</h2>
+<br>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <!--<th>Available Time</th>  Too Long to display in table-->
+        <th>Email</th>
+        <th>Profession</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each coach}}
+        <tr>
+          <td><a href="http://localhost:3000/coach/{{this._id}}">{{this.coachName}}</a></td>
+          <td>{{this.gender}}</td>
+          <!--<td width="30%">{{this.availableTime}}</td>-->
+          <td>{{this.email}}</td>
+          <td>{{this.profession}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+{{!-- changes made here as well --}}

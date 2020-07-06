@@ -1,0 +1,36 @@
+
+  <p id="Err" class="error">{{{error}}}</p>
+  <p id="Succ" class="success">{{{success}}}</p>
+  <form id="dietOperateForm" action={{url}} method="post">
+
+    <div id="addDietDiv" {{addDietDiv}}>
+      <label for="mealName">Meal Name<span style="color:red">*</span>: </label><br>
+        <input type="text" name="mealname" id="mealName"><br><br>
+      <label for="mealServing">Serving(grams)<span style="color:red">*</span>: </label><br>
+        <input type="number" name="mealserving" id="mealServing">
+        <br><br>
+      <label for="mealCal">Calories<span style="color:red">*</span>: </label><br>
+        <input type="number" name="mealcal" id="mealCal"><br><br>
+      <label for="mealType">Meal Type<span style="color:red">*</span>: </label><br>
+        <select name="mealtype" id="mealType">
+
+            <option value="Protein">Protein</option>
+            <option value="Carbs">Carbs</option>
+            <option value="Fat">Fat</option>
+          
+        </select>
+         <br><br>
+        <br><br><br><button name="dietadd" id="dietAdd" type="submit">Submit</button>
+        </div>
+        <div id="deleteDietDiv" {{deleteDietDiv}}>
+          <label for="dietNameD">Please choose the diet name: </label><br>
+            <!--<input type="text" name="dietnamed" id="dietNameD"><br><br>-->
+            <select name="dietnamed" id="dietNameD">
+                {{#each diet}}
+                    <option value={{this.mealName}}>{{this.mealName}}</option>
+                {{/each}}
+              </select>
+            <br><br><br><button name="dietdelete" id="dietDelete">Submit</button>
+        </div>
+  </form>
+

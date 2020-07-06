@@ -1,0 +1,27 @@
+
+<div>
+    <br>
+    <p> Your BMI is {{BMI}}</p>
+    <p>Recommended Calorie Intake : {{cal}}calories/day</p>
+<p>Recommended Diets:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Serving(grams)</th>
+        <th>Calories</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each dietTableObjs}}
+        <tr>
+          <td>{{this.mealName}}</td>
+          <td>{{this.serving}}</td>
+          <td>{{this.calories}}</td>
+          <td>{{this.mealType}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  </div>

@@ -1,0 +1,95 @@
+<!--  <button id="addCourse">Add Course</button><br><br><br>
+  <button id="updateCourse">Update Course</button><br><br><br>
+  <button id="deleteCourse">Delete Course</button><br><br><br>
+  <button id="addCoach">Add Coach</button><br><br><br>
+  <button id="updateCoach">Update Coach</button><br><br><br>
+  <button id="deleteCoach">Delete Coach</button><br><br><br> -->
+  
+  <p id="Err" class="error">{{{error}}}</p>
+  <p id="Succ" class="success">{{{success}}}</p>
+  <form id="operateForm" action={{url}} method="post">
+  <div id="addCourseDiv" {{addCourseDiv}}>
+      <label for="courseName">Course Name<span style="color:red">*</span>: </label><br>
+        <input type="text" name="coursename" id="courseName"><br><br>
+      <label for="courseDes">Course Description<span style="color:red">*</span>: </label><br>
+        <textarea name="coursedes" id="courseDes"></textarea><br><br>
+      <label for="courseCapacity">Course Capacity<span style="color:red">*</span>: </label><br>
+        <input type="number" min="1" name="coursecapacity" id="courseCapacity"><br><br>
+
+        <label for="courseType">Course type<span style="color:red">*</span>: </label><br>
+         <select name="courseType" id="courseType" >
+          <option value="Cardio">Cardio</option>
+             <option value="Strength">Strength</option>
+                <option value="Composite">Composite</option>
+        </select><br><br>
+      <label for="courseTime">Course Time<span style="color:red">*</span>: </label><br><br>
+        <select name="coursetime" id="courseTime" multiple>
+            <option value="Option" selected>Option</option>
+            <option value="Mon0608">Mon0608</option>
+            <option value="Mon0810">Mon0810</option>
+            <option value="Mon1012">Mon1012</option>
+            <option value="Mon1416">Mon1416</option>
+            <option value="Mon1618">Mon1618</option>
+            <option value="Mon2022">Mon2022</option>
+            <option value="Tus0608">Tus0608</option>
+            <option value="Tus0810">Tus0810</option>
+            <option value="Tus1012">Tus1012</option>
+            <option value="Tus1416">Tus1416</option>
+            <option value="Tus1618">Tus1618</option>
+            <option value="Tus2022">Tus2022</option>
+            <option value="Wen0608">Wen0608</option>
+            <option value="Wen0810">Wen0810</option>
+            <option value="Wen1012">Wen1012</option>
+            <option value="Wen1416">Wen1416</option>
+            <option value="Wen1618">Wen1618</option>
+            <option value="Wen2022">Wen2022</option>
+            <option value="Thu0608">Thu0608</option>
+            <option value="Thu0810">Thu0810</option>
+            <option value="Thu1012">Thu1012</option>
+            <option value="Thu1416">Thu1416</option>
+            <option value="Thu1618">Thu1618</option>
+            <option value="Thu2022">Thu2022</option>
+            <option value="Fri0608">Fri0608</option>
+            <option value="Fri0810">Fri0810</option>
+            <option value="Fri1012">Fri1012</option>
+            <option value="Fri1416">Fri1416</option>
+            <option value="Fri1618">Fri1618</option>
+            <option value="Fri2022">Fri2022</option>
+            <option value="Sat0608">Sat0608</option>
+            <option value="Sat0810">Sat0810</option>
+            <option value="Sat1012">Sat1012</option>
+            <option value="Sat1416">Sat1416</option>
+            <option value="Sat1618">Sat1618</option>
+            <option value="Sat2022">Sat2022</option>
+            <option value="Sun0608">Sun0608</option>
+            <option value="Sun0810">Sun0810</option>
+            <option value="Sun1012">Sun1012</option>
+            <option value="Sun1416">Sun1416</option>
+            <option value="Sun1618">Sun1618</option>
+            <option value="Sun2022">Sun2022</option>
+        </select>
+        <br><br><br><button name="courseadd" id="courseAdd" type="submit">Submit</button>
+        </div>
+        <div id="updateCourseDiv" {{updateCourseDiv}}>
+            <label for="courseNameU">Please choose the course name: </label><br>
+              <!--  <input type="text" name="coursenameu" id="courseNameU"><br><br> -->
+              <select name="coursenameu" id="courseNameU">
+                {{#each course}}
+                    <option value={{this.courseName}}>{{this.courseName}}</option>
+                {{/each}}
+              </select>
+                <br><br><br><button name="courseupdate" id="courseUpdate">Submit</button>
+        </div>
+      <div id="deleteCourseDiv" {{deleteCourseDiv}}>
+        <label for="courseNameD">Please choose the course name: </label><br>
+          <!--<input type="text" name="coursenamed" id="courseNameD"><br><br> -->
+              <select name="coursenamed" id="courseNameD">
+                {{#each course}}
+                    <option value={{this.courseName}}>{{this.courseName}}</option>
+                {{/each}}
+              </select>
+          <br><br><br><button name="coursedelete" id="courseDelete">Submit</button>
+      </div>
+  </form>
+
+

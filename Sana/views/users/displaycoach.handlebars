@@ -1,0 +1,23 @@
+<br><h2>Coaches List:</h2><br>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Available Time</th>
+        <th>Email</th>
+        <th>Profession</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each coachTableObjs}}
+        <tr>
+          <td width="10%">{{this.coachName}}</td>
+          <td width="10%">{{this.gender}}</td>
+          <td width="30%">{{this.availableTime}}</td>
+          <td width="30%">{{this.email}}</td>
+          <td width="20%">{{this.profession}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>

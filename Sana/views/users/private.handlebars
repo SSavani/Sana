@@ -1,0 +1,74 @@
+
+<h2>This is your private page and your information:</h2>
+<p>Username: {{{userName}}}</p>
+<p>Email: {{{Email}}}</p>
+<p>Gender: {{{gender}}}</p>
+<p>Heights: {{{heights}}}</p>
+<p>Weights: {{{weights}}}</p> 
+<p>Courses Registered:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each course}}
+        <tr>
+          <td>{{this.cName}}</td>
+          <td>{{this.cTime}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table><br><br><br>
+<p>Coaches Registered:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each coach}}
+        <tr>
+          <td>{{this.cName}}</td>
+          <td>{{this.cTime}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+{{!-- <p>Diet Plan:</p>
+ <table>
+    <thead>
+      <tr>
+        <th>Meal</th>
+        <th>Calories</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each diet}}
+        <tr>
+          <td>{{this.mName}}</td>
+          <td>{{this.mCal}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table> --}}
+<p id="privateErr" class="error">{{err}}</p>
+<br><br>
+<a href="http://localhost:3000/users/inforupdate">Change Information/</a>
+<a href="http://localhost:3000/users/changepassword">Change Password</a>
+<br>
+<a href="http://localhost:3000/CourseRecomendation">Get Recommended Courses</a>
+<br>
+<a href="http://localhost:3000/dietRecomendation">Get Recommended Diet Plan</a>
+<br>
+<a href="http://localhost:3000/course">Register/Drop/Comment Courses</a>
+<br>
+<a href="http://localhost:3000/coach">Register/Drop/Comment Personal Trainer</a>
+<br>
+<a href="http://localhost:3000/logout">Logout</a>
+<br>

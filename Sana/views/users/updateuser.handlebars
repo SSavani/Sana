@@ -1,0 +1,21 @@
+<h2>Change Personal information</h2>
+
+<p id="changeUserErr" class="error">{{{changeUserErr}}}</p>
+
+<form id="changeInfo" action="http://localhost:3000/users/inforupdate" method="post">
+    <label for="userName">Please input the information needs to change:</label><br><br>
+    Username:<br><input type="text" name="username" id="userName">
+    <br><br><label for="Email"></label>
+    Email:<br><input type="text" name="email" id="Email">
+    <br><br><label for="Gender"></label>
+    Gender:<br><select name="gender" id="Gender">
+                     <option value="Option" selected>Option</option>
+                     <option value="female">Female</option>
+                     <option value="male">Male</option>
+                 </select>
+    <br><br><label for="Height"></label>
+    Height(in meters):<br><input type="text" name="height" id="Height">
+    <br><br><label for="Weight"></label>
+    Weight(in kg's):<br><input type="text" name="weight" id="Weight">
+    <br><br><br><button name="submit" id="buttonSub">Submit</button>
+</form>
